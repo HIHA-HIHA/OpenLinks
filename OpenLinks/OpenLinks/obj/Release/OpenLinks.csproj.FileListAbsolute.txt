@@ -11,3 +11,10 @@ P:\GitHub\OpenLink\OpenLinks\OpenLinks\bin\Release\OpenLinks.pdb
 P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Release\OpenLinks.csproj.CoreCompileInputs.cache
 P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Release\OpenLinks.exe
 P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Release\OpenLinks.pdb
+G:\Programming\CSharp\CodeReview\OpenLinks\OpenLinks\OpenLinks\obj\Release\OpenLinks.csproj.AssemblyReference.cache
+G:\Programming\CSharp\CodeReview\OpenLinks\OpenLinks\OpenLinks\obj\Release\OpenLinks.csproj.CoreCompileInputs.cache
+G:\Programming\CSharp\CodeReview\OpenLinks\OpenLinks\OpenLinks\obj\Release\OpenLinks.exe
+G:\Programming\CSharp\CodeReview\OpenLinks\OpenLinks\OpenLinks\obj\Release\OpenLinks.pdb
+G:\Programming\CSharp\CodeReview\OpenLinks\OpenLinks\OpenLinks\bin\Release\OpenLinks.exe.config
+G:\Programming\CSharp\CodeReview\OpenLinks\OpenLinks\OpenLinks\bin\Release\OpenLinks.exe
+G:\Programming\CSharp\CodeReview\OpenLinks\OpenLinks\OpenLinks\bin\Release\OpenLinks.pdb
