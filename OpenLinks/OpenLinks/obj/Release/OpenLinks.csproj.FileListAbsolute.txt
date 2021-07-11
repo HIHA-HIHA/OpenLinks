@@ -1,0 +1,7 @@
+C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\bin\Release\OpenLinks.exe.config
+C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\bin\Release\OpenLinks.exe
+C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\bin\Release\OpenLinks.pdb
+C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\obj\Release\OpenLinks.csproj.AssemblyReference.cache
+C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\obj\Release\OpenLinks.csproj.CoreCompileInputs.cache
+C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\obj\Release\OpenLinks.exe
+C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\obj\Release\OpenLinks.pdb
