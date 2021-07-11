@@ -1,8 +1,5 @@
 ﻿using OpenLinks.Links;
 
-using System;
-
-
 namespace OpenLinks.Themes
 {
     class YouTubeTheme : Theme
@@ -11,19 +8,17 @@ namespace OpenLinks.Themes
         {
             Name = "YouTube";
 
-            YouTubeLink AuthorChannal = new YouTubeLink(url: "https://www.youtube.com/channel/UCMJx9bAuYr_dy8slqKe13JQ", name: "Channal author in youtube");
-            YouTubeLink Youtube = new YouTubeLink(url: "https://www.youtube.com/", name: "YouTube");
+            var authorChannel = new Link(
+                url: "https://www.youtube.com/channel/UCMJx9bAuYr_dy8slqKe13JQ",
+                name: "Channal author in youtube"
+            );
 
-            Links = new Link[] { AuthorChannal, Youtube };
-        }
+            var youtube = new Link(
+                url: "https://www.youtube.com/", 
+                name: "YouTube"
+            );
 
-        public override void ShowLinks()
-        {
-            Console.WriteLine("Ссылки: ");
-            for (int i = 0; i < Links.Length; i++)
-            {
-                Console.WriteLine($"* [ID: {i} ] [ {Links[i].Name} ]");
-            }
+            Links = new Link[] { authorChannel, youtube };
         }
     }
 }

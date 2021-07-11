@@ -1,15 +1,18 @@
-﻿
+﻿using OpenLinks.Themes;
 
 namespace OpenLinks
 {
     class Program
     {
-  
-        static void Main(string[] args)
+        static void Main()
         {
             InterfaceProgram interfaceProgram = InterfaceProgram.Instance;
-            interfaceProgram.ChoiseTheme();
+            interfaceProgram.AddTheme(
+                new YouTubeTheme(),
+                new VKTheme(),
+                new GitHubTheme()
+            );
+            interfaceProgram.ChooseTheme();
         }
-  
     }
 }
