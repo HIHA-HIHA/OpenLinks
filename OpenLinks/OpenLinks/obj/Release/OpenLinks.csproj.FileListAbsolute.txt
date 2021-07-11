@@ -8,7 +8,6 @@ C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\obj\Release\OpenLinks.pdb
 P:\GitHub\OpenLink\OpenLinks\OpenLinks\bin\Release\OpenLinks.exe.config
 P:\GitHub\OpenLink\OpenLinks\OpenLinks\bin\Release\OpenLinks.exe
 P:\GitHub\OpenLink\OpenLinks\OpenLinks\bin\Release\OpenLinks.pdb
-P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Release\OpenLinks.csproj.AssemblyReference.cache
 P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Release\OpenLinks.csproj.CoreCompileInputs.cache
 P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Release\OpenLinks.exe
 P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Release\OpenLinks.pdb

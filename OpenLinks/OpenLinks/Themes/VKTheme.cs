@@ -9,10 +9,10 @@ namespace OpenLinks.Themes
         {
             Name = "VK";
 
-            VKLink VKMe = new VKLink(url: "https://vk.com/suandfo", name: "VKME");
-            VKLink VKMessage = new VKLink(url: "https://vk.com/im", name: "VKMessage");
+            VKLink AuthorProfileInVK = new VKLink(url: "https://vk.com/suandfo", name: "Author profile in VK");
+            VKLink VKMessage = new VKLink(url: "https://vk.com/im", name: "VK Message");
 
-            Links = new Link[] { VKMe, VKMessage };
+            Links = new Link[] { AuthorProfileInVK, VKMessage };
         }
         public override void ShowLinks()
         {

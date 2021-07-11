@@ -11,10 +11,10 @@ namespace OpenLinks.Themes
         {
             Name = "YouTube";
 
-            YouTubeLink MyChannal = new YouTubeLink(url: "https://www.youtube.com/channel/UCMJx9bAuYr_dy8slqKe13JQ", name: "Youtube-MyChannal");
+            YouTubeLink AuthorChannal = new YouTubeLink(url: "https://www.youtube.com/channel/UCMJx9bAuYr_dy8slqKe13JQ", name: "Channal author in youtube");
             YouTubeLink Youtube = new YouTubeLink(url: "https://www.youtube.com/", name: "YouTube");
 
-            Links = new Link[] { MyChannal, Youtube };
+            Links = new Link[] { AuthorChannal, Youtube };
         }
 
         public override void ShowLinks()
