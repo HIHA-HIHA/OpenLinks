@@ -36,7 +36,9 @@ namespace OpenLinks
 
             Theme vkTheme = new VKTheme();
             Theme youTubeTheme = new YouTubeTheme();
-            themes = new Theme[] { vkTheme, youTubeTheme };
+            Theme gitHubTheme = new GitHubTheme();
+
+            themes = new Theme[] { vkTheme, youTubeTheme, gitHubTheme };
         }
 
         

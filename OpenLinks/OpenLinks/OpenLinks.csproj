@@ -44,11 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\InterfaceProgram.cs" />
+    <Compile Include="Links\GitHubLink.cs" />
     <Compile Include="Links\YouTubeLink.cs" />
     <Compile Include="Links\VKLink.cs" />
     <Compile Include="Links\Link.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Themes\GitHubTheme.cs" />
     <Compile Include="Themes\YouTubeTheme.cs" />
     <Compile Include="Themes\VKTheme.cs" />
     <Compile Include="Themes\Theme.cs" />

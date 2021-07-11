@@ -5,3 +5,10 @@ C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\obj\Debug\OpenLinks.csproj.As
 C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\obj\Debug\OpenLinks.csproj.CoreCompileInputs.cache
 C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\obj\Debug\OpenLinks.exe
 C:\Users\IGENUISI\source\repos\OpenLinks\OpenLinks\obj\Debug\OpenLinks.pdb
+P:\GitHub\OpenLink\OpenLinks\OpenLinks\bin\Debug\OpenLinks.exe.config
+P:\GitHub\OpenLink\OpenLinks\OpenLinks\bin\Debug\OpenLinks.exe
+P:\GitHub\OpenLink\OpenLinks\OpenLinks\bin\Debug\OpenLinks.pdb
+P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Debug\OpenLinks.csproj.AssemblyReference.cache
+P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Debug\OpenLinks.csproj.CoreCompileInputs.cache
+P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Debug\OpenLinks.exe
+P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Debug\OpenLinks.pdb
