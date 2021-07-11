@@ -1,5 +1,4 @@
 ﻿using OpenLinks.Links;
-using System;
 
 namespace OpenLinks.Themes
 {
@@ -9,20 +8,11 @@ namespace OpenLinks.Themes
         {
             Name = "VK";
 
-            VKLink AuthorProfileInVK = new VKLink(url: "https://vk.com/suandfo", name: "Author profile in VK");
-            VKLink VKMessage = new VKLink(url: "https://vk.com/im", name: "VK Message");
+            var vkProfile = new Link(url: "https://vk.com/suandfo", name: "Author profile in VK");
+            var vkDirectMessage = new Link(url: "https://vk.com/im", name: "VK Message");
 
-            Links = new Link[] { AuthorProfileInVK, VKMessage };
+            Links = new Link[] { vkProfile, vkDirectMessage };
         }
-        public override void ShowLinks()
-        {
-            Console.WriteLine("Ссылки: ");
-            for (int i = 0; i < Links.Length; i++)
-            {
-                Console.WriteLine($"* [ID: {i} ] [ {Links[i].Name} ]");
-            }
-        }
-
     }
 }
 

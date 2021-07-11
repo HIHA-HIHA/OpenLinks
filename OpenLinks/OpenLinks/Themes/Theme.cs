@@ -1,25 +1,21 @@
 ﻿using OpenLinks.Links;
-
-
+using System;
 
 namespace OpenLinks.Themes
 {
-    abstract class Theme
+    public class Theme
     {
-        /// <summary>
-        /// Name theme.
-        /// </summary>
-        public string Name;
+        public string Name { get; protected set; }
+        public Link[] Links { get; protected set; }
 
-        /// <summary>
-        /// Array links in theme.
-        /// </summary>
-        public Link[] Links;
+        public virtual void ShowLinks()
+								{
+            Console.WriteLine("Ссылки: ");
 
-        /// <summary>
-        /// Show list links in theme.
-        /// </summary>
-        public abstract void ShowLinks();
+            for (int i = 0; i < Links.Length; i++)
+            {
+                Console.WriteLine($"* [ID: {i} ] [ {Links[i].Name} ]");
+            }
+        }
     }
-
 }

@@ -1,24 +1,21 @@
-﻿
+﻿using System.Diagnostics;
 
 namespace OpenLinks.Links
 {
-    abstract class Link
+    public class Link
     {
-        /// <summary>
-        /// Adress link.
-        /// </summary>
-        public string Url { get;  protected set; } 
+								public Link(string url, string name)
+								{
+            Url = url;
+            Name = name;
+								}
 
-        /// <summary>
-        /// Name link.
-        /// </summary>
-        public string Name { get; protected set; }
+        public string Url { get; private set; } 
+        public string Name { get; private set; }
 
-        /// <summary>
-        /// Open link in browser.
-        /// </summary>
-        public abstract void OpenUrl();
-
-       
+        public void OpenUrl()
+								{
+            Process.Start(Url);
+        }
     }
 }

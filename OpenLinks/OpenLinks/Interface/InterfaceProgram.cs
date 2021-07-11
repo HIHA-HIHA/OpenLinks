@@ -1,17 +1,15 @@
 ﻿using System;
-
-
-
 using OpenLinks.Themes;
 using OpenLinks.Links;
 using System.Threading;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace OpenLinks
 {
-    class InterfaceProgram
+    public class InterfaceProgram
     {
-
-        private Theme[] themes { get; }
+        private readonly List<Theme> themes;
 
         private static InterfaceProgram interfaceProgram;
         public static InterfaceProgram Instance
@@ -31,82 +29,92 @@ namespace OpenLinks
 
         }
 
-        private InterfaceProgram()
-        {
-
-            Theme vkTheme = new VKTheme();
-            Theme youTubeTheme = new YouTubeTheme();
-            Theme gitHubTheme = new GitHubTheme();
-
-            themes = new Theme[] { vkTheme, youTubeTheme, gitHubTheme };
+								private InterfaceProgram()
+								{
+            themes = new List<Theme>();
         }
 
-        
-        public void ChoiseTheme()
+        public void AddTheme(params Theme[] themesToAdd)
+								{
+												foreach (var theme in themesToAdd)
+												{
+                themes.Add(theme);
+            }
+        }
+
+        public void ChooseTheme()
         {
             while (true)
             {
-                Console.WriteLine("Список тем: ");
-                for (int i = 0; i < themes.Length; i++)
-                {
-                    Console.WriteLine($"*- [ID: {i}] {themes[i].Name}");
-                }
-                Console.Write("ID темы: ");
-
+                ShowAllThemes();
                 
-                if (Int32.TryParse(Console.ReadLine(), out int idTheme) && idTheme <= themes.Length)
+                if (InputIsCorrect(themes, out var correctId))
                 {
-                    ShowMenuTheme(themes: themes, idTheme: idTheme);
+                    ShowMenuTheme(correctId);
                 }
                 else
                 {
-                    Console.WriteLine("Неверный ввод!");
-                    Thread.Sleep(1000);  // wait programm 500 miliseconds.
-                    Console.Clear();
+                    ShowErrorMessage();
                     continue;
                 }                                                              
             }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="themes">Array themes.</param>
-        /// <param name="idTheme">ID the right one theme</param>
-        private void ShowMenuTheme(Theme[] themes, int idTheme)
+        private void ShowMenuTheme(int idTheme)
         {
-            
-
             Console.Clear();
             Console.WriteLine($"Тема: {themes[idTheme].Name}");
             themes[idTheme].ShowLinks();
-            ChosieUrl(links: themes[idTheme].Links);
 
-
-
+            ChooseUrl(links: themes[idTheme].Links);
         }
 
-        /// <summary>
-        /// Choise link from theme for open in browser.
-        /// </summary>
-        /// <param name="links"> Array links in theme.</param>
-        private void ChosieUrl(Link[] links)
+        private void ChooseUrl(Link[] links)
         {
             Console.Write("ID ссылки: ");
             
-            if (Int32.TryParse(Console.ReadLine(), out int idUrl)&& idUrl <= links.Length)
+            if (InputIsCorrect(links, out var correctId))
             {
-                links[idUrl].OpenUrl();
+                links[correctId].OpenUrl();
                 Console.Clear();
             }
             else
             {
-                Console.WriteLine("Неверный ввод!");
-                Thread.Sleep(1000);  // wait programm 500 miliseconds.
-                Console.Clear();
+                ShowErrorMessage();
                 return;
             }
         }
 
+        private void ShowAllThemes()
+								{
+            Console.WriteLine("Список тем: ");
+
+            for (int i = 0; i < themes.Count; i++)
+            {
+                Console.WriteLine($"*- [ID: {i}] {themes[i].Name}");
+            }
+
+            Console.Write("ID темы: ");
+        }
+
+        private bool InputIsCorrect<T>(IEnumerable<T> elementsArray, out int correctId)
+								{
+            var isCorrect = int.TryParse(Console.ReadLine(), out int urlId);
+            correctId = urlId;
+
+            return isCorrect && IdInRange(correctId, elementsArray);
+        }
+
+        private bool IdInRange<T>(int id, IEnumerable<T> array)
+								{
+            return id >= 0 && id < array.Count();
+								}
+
+        private void ShowErrorMessage()
+								{
+            Console.WriteLine("Неверный ввод!");
+            Thread.Sleep(1000);
+            Console.Clear();
+        }
     }
 }
