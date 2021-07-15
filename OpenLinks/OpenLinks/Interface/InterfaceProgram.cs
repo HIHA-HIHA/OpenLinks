@@ -69,7 +69,7 @@ namespace OpenLinks
             ChooseUrl(links: themes[idTheme].Links);
         }
 
-        private void ChooseUrl(Link[] links)
+        private void ChooseUrl(List<Link> links)
         {
             Console.Write("ID ссылки: ");
 

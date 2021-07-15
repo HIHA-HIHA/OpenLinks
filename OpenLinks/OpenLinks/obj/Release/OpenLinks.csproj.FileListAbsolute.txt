@@ -25,3 +25,4 @@ P:\Console Projects\CSharp\OpenLinksCodeReview\OpenLinks-code-review\OpenLinks\O
 P:\Console Projects\CSharp\OpenLinksCodeReview\OpenLinks-code-review\OpenLinks\OpenLinks\obj\Release\OpenLinks.csproj.CoreCompileInputs.cache
 P:\Console Projects\CSharp\OpenLinksCodeReview\OpenLinks-code-review\OpenLinks\OpenLinks\obj\Release\OpenLinks.exe
 P:\Console Projects\CSharp\OpenLinksCodeReview\OpenLinks-code-review\OpenLinks\OpenLinks\obj\Release\OpenLinks.pdb
+P:\GitHub\OpenLink\OpenLinks\OpenLinks\obj\Release\OpenLinks.csproj.AssemblyReference.cache
